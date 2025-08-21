@@ -39,6 +39,7 @@ import ExploreImg5 from '../../assets/explore-img5.png'
 // import brand5 from '../../assets/brand-5.png'
 
 
+
 // import news4 from '../../assets/news-4.png'
 // import news5 from '../../assets/news-5.png'
 // import news6 from '../../assets/news-6.png'
@@ -140,6 +141,64 @@ function Index() {
                   id='datepicker'
                   className='form-control bg-dark text-white border-0'
                 />
+              </div>
+              <div className="col-xl-2 travel-info" style={{ borderRight: '1px solid rgba(248, 250, 252, 0.08)'}}>
+                <label className="form-label semibold fs-5 text-white">
+                  <i className="bi bi-person me-2 fs-6"></i>
+                  Guests
+                </label>
+                <select className="form-select bg-dark text-white border-0">
+                  <option>02</option>
+                  <option>01</option>
+                  <option>03</option>
+                  <option>04+</option>
+                </select>
+              </div>
+              <div className="col-xl-2 travel-info" style={{ borderRight: '1px solid rgba(248, 250, 252, 0.08)'}}>
+                <button className="travel-btn py-3 px-5 fs-6 btn btn-primary fw-semibold" style={{backgroundColor: '#f26f55', border: 'none', cursor: 'pointer'}}>
+                  Search Plan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       {/* Banner */}
+       <div className="banner-container section">
+        <div className="container">
+          <div className="row text-center mb-5">
+            <div className="section-title">
+              <p>Special offers</p>
+              <h2>Winter Our Big Offers to Inspire You</h2>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mb-4">
+              <div className="banner-content z-1 px-4 rounded-3 banner-bg-1 text-white">
+                <p className="hightlight-text">Save up to</p>
+                <h4 className="fs-1 fw-semibold">50%</h4>
+                <p className="pera fs-4 fw-bold">Let's Explore the World</p>
+                <div className="location d-flex align-items-center gap-2">
+                  <i className="bi bi-geo-alt"></i>
+                    <p className="name mb-0">Bangkok, Thailand</p>
+                </div>
+                <button className="btn banner-btn px-4">Booking now</button>
+              </div>
+            </div>
+            <div className="col-lg-6 mb-4">
+              <div className="banner-content z-1 py-5 px-4 rounded-3 banner-bg-2 text-white">
+                <h4 className="fs-1 fw-semibold">Nearby Hotel</h4>
+                <p class="pera">
+                  Up to <span class='hightlights-text'>50%</span> off
+                </p>
+                <div className="location d-flex align-items-center gap-2">
+                  <i class="bi bi-geo-alt"></i>
+                  <p className="name mb-0">Bangkok, Thailand</p>
+                </div>
+                <button className="btn banner-btn px-4">Booking now</button>
               </div>
             </div>
           </div>

@@ -75,7 +75,8 @@ function Nav() {
     <div className="container">
         <div className="row py-0 py-lg-4 w-100 d-flex align-items-center">
             <div className="col-lg-9">
-                <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id='navtoggle'>
+                {/* Responsive here nav */}
+                <div className={`collapse navbar-collapse ${isMenuOpen} ? 'show' : "" `} id='navtoggle'>
                     <ul className="nav-menu list-unstyled m-0 d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 gap-xl-5 gap-lg-4">
                         <li className="nav-items position-relative">
                             <a href="" className="nav-link" onClick={closeMenu}>Home</a>

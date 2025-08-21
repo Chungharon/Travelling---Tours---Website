@@ -155,7 +155,7 @@ body {
 
 .hero-header {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,3 +235,106 @@ body {
   font-weight: 500;
   z-index: 0;
 }
+
+.travel-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(40px);
+}
+
+.travel-box select {
+  box-shadow: none !important;
+  color: var(--primary-pera) !important;
+}
+
+.travel-box input {
+  box-shadow: none !important;
+  color: var(--primary-pera) !important;
+}
+
+/* Responsive - Hero MQ Section */
+
+@media (max-width:1300px) {
+  .travel-box {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width:1199px) {
+  .hero-header {
+    min-height: auto !important;
+    height: 100vh !important;
+  }
+  .travel-info {
+    border: none !important;
+    align-items: center !important;
+  }
+  .travel-box select {
+    align-items: center;
+  }
+  .travel-box input {
+    align-items: center;
+  }
+  .travel-box {
+    transform: translateY(10px);
+  }
+}
+
+.collapse .navbar-collapse.show {
+  transition: all .4s ease-in-out !important;
+}
+
+/* Banner */
+
+.banner-bg-1 {
+  background-image: url(assets/offercard-1.jpeg) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-bg-2 {
+  background-image: url(assets/offercard-2.jpeg) !important;
+}
+
+.banner-content {
+  height: 350px;
+  z-index: 4;
+}
+
+.banner-content .highlights-text {
+  font-family: var(--KaushanScript-family);
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: var(--secondary-color); 
+  position: relative;
+
+}
+
+.banner-content:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #000000 -0.26%, #071516 -0.26%, rgba(7, 21, 22, 0.6) 33.39%, rgba(7, 21, 22, 0.5) 45.1%, rgba(7, 21, 22, 0) 59.82%);
+  z-index: -1;
+}
+
+.banner-btn {
+  color: var(--white-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-radius: 30px !important;
+  margin-top: 20px;
+  border: 1px Solid var(--secondary-color) !important;
+  transition: var(--transition-regular)!important;
+}
+
+.banner-btn:hover {
+  background-color: transparent !important;
+}
+
