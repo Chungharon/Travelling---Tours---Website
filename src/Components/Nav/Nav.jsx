@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 // import { CartContext } from './../../Context/CartContext';
 
 
 function Nav() {
     // const [ cartItems ] = useContext(CartContext);
     const [ isMenuOpen, setIsMenuOpen ] = useState(false);
+    const cartCount = 0; // Placeholder for cart count to prevent error
 
     // useEffect(() => {
     //     const updateeCount = () => {
@@ -38,9 +40,9 @@ function Nav() {
                     </div>
                     <div className="col-6 col-lg-4 text-center my-2 my-lg-0">
                         <h1 className="p-0 m-0 text-uppercase fw-semibold">
-                            <a href="#" className="text-white text-decoration-none navbar-brand fs-2 m-0">
+                            <Link to="/" className="text-white text-decoration-none navbar-brand fs-2 m-0">
                                 Fly<span style={{color: "#f26f55"}}>n</span>est
-                            </a>
+                            </Link>
                         </h1>
                     </div>
                     <div className="col-12 col-lg-4 d-flex justify-content-end align-items-center gap-3">
@@ -53,7 +55,7 @@ function Nav() {
                             <a href="#" className="cartpage-cart-link position-relative">
                                 <i className="bi bi-cart text-white fs-5"></i>
                                 <span className="cart-count">
-                                    0
+                                    {cartCount}
                                 </span>
                             </a>
                             <button className='btn sign-up btn-custome text-white rounded-5 px-4 py-2 fs-6 fw-semibold'>Sign up</button>
@@ -76,31 +78,31 @@ function Nav() {
         <div className="row py-0 py-lg-4 w-100 d-flex align-items-center">
             <div className="col-lg-9">
                 {/* Responsive here nav */}
-                <div className={`collapse navbar-collapse ${isMenuOpen} ? 'show' : "" `} id='navtoggle'>
+                <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id='navtoggle'>
                     <ul className="nav-menu list-unstyled m-0 d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 gap-xl-5 gap-lg-4">
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Home</a>
+                            <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Tours</a>
+                            <Link to="/tours" className="nav-link" onClick={closeMenu}>Tours</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Hotels</a>
+                            <Link to="/hotels" className="nav-link" onClick={closeMenu}>Hotels</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Transports</a>
+                            <Link to="/transports" className="nav-link" onClick={closeMenu}>Transports</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Restaurants</a>
+                            <Link to="/restaurants" className="nav-link" onClick={closeMenu}>Restaurants</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>About</a>
+                            <Link to="/about" className="nav-link" onClick={closeMenu}>About</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>News</a>
+                            <Link to="/news" className="nav-link" onClick={closeMenu}>News</Link>
                         </li>
                         <li className="nav-items position-relative">
-                            <a href="" className="nav-link" onClick={closeMenu}>Contact</a>
+                            <Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link>
                         </li>
                     </ul>
                 </div>

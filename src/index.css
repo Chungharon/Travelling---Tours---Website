@@ -388,3 +388,172 @@ body {
   color: var(--white-color);
   font-size: 0.875rem;
 }
+
+.tour-slider {
+  position: relative;
+  padding: 40px 0;
+  background-color: #0d0f10;
+}
+
+.tour-slide-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0.3);
+  opacity: 0.5;
+}
+
+.swiper-slide-active .tour-slide-img {
+  opacity: 1;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.about-detail-section {
+  background-color: var(--section-bg);
+  color: var(--white-color);
+}
+.tour-title {
+  font-family: var(--KaushanScript-family);
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.tour-meta span {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+
+.tour-meta i {
+  color: var(--secondary-color);
+  margin-right: 6px;
+}
+
+.tour-price {
+  font-size: 1.1rem;
+  color: var(--white-color);
+
+}
+
+.tour-price .text-dabger {
+  color: var(--secondary-color) !important;
+
+}
+
+.tour-rating {
+  color: #ffc107
+}
+.tour-description p {
+  color: var(--primary-pera);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.list-unstyle-detail li {
+  padding-left: 10px;
+  margin-bottom: 6px;
+  position: relative;
+  color: var(--white-color);
+}
+
+.list-unstyle-detail li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+.accordion-button {
+  background-color: var(--section-light);
+  color: var(--white-color);
+  font-weight: 600;
+  transition: var(--transition-regular);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.accordion-item {
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  color: var(--white-pera);
+}
+
+.booking-widget {
+  background-color: var(--section-light);
+  color: var(--white-color);
+}
+
+.booking-widget .form-label,
+.booking-widget .form-select,
+.booking-widget .form-control {
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  color: var(--white-color);
+}
+
+.booking-widget .form-control::placeholder {
+  color: var(--primary-pera);
+}
+
+.booking-widget .btn {
+  background-color: var(--secondary-color);
+  border: none;
+  transition: var(--transition-regular);
+}
+
+.booking-widget .btn:hover {
+  background-color: #e65c42;
+}
+
+.booking-widget .text-muted {
+  color: var(--primary-pera) !important;
+}
+
+.list-number {
+  padding-left: 18px;
+  color: var(--white-pera);
+}
+
+.list-number li {
+  margin-bottom: 6px;
+}
+
+.list-numbered {
+  counter-reset: custom-counter;
+  padding-left: 0;
+  margin: 0;
+}
+.list-numbered li {
+  counter-increment: custom-counter;
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 36px;
+  color: var(--primary-pera);
+  font-size: 0.95rem;
+}
+
+.list-numbered li:before {
+  content: counter(custom-counter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
